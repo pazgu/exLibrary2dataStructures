@@ -192,6 +192,11 @@ namespace exLibrary2dataStructures
                     {
                         break;
                     }
+                    else
+                    {
+                        Console.WriteLine("No input received. Please try again.");
+                        break;
+                    }
                 }
             }
         }
@@ -275,6 +280,11 @@ namespace exLibrary2dataStructures
                     }
                     else if (userChoice == 2)
                     {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("No input received. Please try again.");
                         break;
                     }
                 }
@@ -379,8 +389,13 @@ namespace exLibrary2dataStructures
                     {
                         break;
                     }
+                    else
+                    {
+                        Console.WriteLine("No input received. Please try again.");
+                        break;
+                    }
                 }
-            }
+             }
         } 
 
         public void LoanBook() //Manage the loaning system of the library
@@ -619,6 +634,11 @@ namespace exLibrary2dataStructures
                     {
                         break;
                     }
+                    else
+                    {
+                        Console.WriteLine("No input received. Please try again.");
+                        break;
+                    }
                 }
             }          
         }
@@ -726,6 +746,11 @@ namespace exLibrary2dataStructures
                     }
                     else if (userChoice == 2)
                     {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("No input received. Please try again.");
                         break;
                     }
                 }
@@ -840,6 +865,11 @@ namespace exLibrary2dataStructures
                     {
                         break;
                     }
+                    else
+                    {
+                        Console.WriteLine("No input received. Please try again.");
+                        break;
+                    }
                 }
             }
         }
@@ -911,6 +941,11 @@ namespace exLibrary2dataStructures
                     {
                         break;
                     }
+                    else
+                    {
+                        Console.WriteLine("No input received. Please try again.");
+                        break;
+                    }
                 }
             }
             //I used this website: https://www.completecsharptutorial.com/basic/complete-system-exception.php to search the whole list of exceptions and find what can be connected.
@@ -973,6 +1008,11 @@ namespace exLibrary2dataStructures
                     }
                     else if (userChoice == 2)
                     {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("No input received. Please try again.");
                         break;
                     }
                 }
