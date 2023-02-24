@@ -67,7 +67,7 @@ namespace exLibrary2dataStructures
             string[] tableCreations = {
             "DROP TABLE IF EXISTS Subscribers",
             "DROP TABLE IF EXISTS Books",
-            "CREATE TABLE Subscribers (idNumber CHAR(9) PRIMARY KEY, firstName VARCHAR(15) NOT NULL, lastName VARCHAR(40) NOT NULL, firstBook_id VARCHAR(5), secondBook_id VARCHAR(5), thirdBook_id VARCHAR(5))",
+            "CREATE TABLE Subscribers (idNumber CHAR(9) PRIMARY KEY, firstName VARCHAR(15) NOT NULL, lastName VARCHAR(40) NOT NULL, firstBook_id VARCHAR(5) REFERENCES Books(ISBN_Key), secondBook_id VARCHAR(5) REFERENCES Books(ISBN_Key), thirdBook_id VARCHAR(5) REFERENCES Books(ISBN_Key))",
             "CREATE TABLE Books (ISBN_Key VARCHAR(5) PRIMARY KEY, bookType VARCHAR(10) NOT NULL, bookTitle VARCHAR(50) NOT NULL, author VARCHAR(50) NOT NULL, genre VARCHAR(20) NOT NULL, fileSize FLOAT, copiesNumber INT)" };
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {

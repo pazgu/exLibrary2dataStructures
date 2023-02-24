@@ -26,6 +26,7 @@ namespace exLibrary2dataStructures
         {
             _connectionString = connectionString; //It will get the current connection from the Main.cs page
         }
+        
         public void AddBook() //Add a new book to the library's collection
         {
             //for each function I inserted the data to the db after I refer to the exceptions and validations needed, so the data should be fitting.
